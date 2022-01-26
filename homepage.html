@@ -53,10 +53,6 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 et dolorem adipisci officia odio delectus ullam tempore? Ipsam
                 id veniam quam! Ex qui in ipsum, iure aliquid nobis blanditiis
-                eius! Inventore eveniet fugit qui est officiis quidem impedit
-                laudantium? Obcaecati deserunt fuga fugiat possimus esse at
-                magni laborum iste atque? Porro dignissimos quis ad, qui iusto
-                animi minus temporibus maiores.
               </p>
             </div>
           </button>
@@ -74,11 +70,11 @@
             <h2 class="accordion-title">UZCA Program</h2>
             <i class="fas fa-angle-up"></i>
             <div class="accordion-content">
-              <ul class="hidden-accordion-info">
-                <li><a href="#">Intro to computer</a></li>
-                <li><a href="#">Su Coders</a></li>
-                <li><a href="#">Cuddle Bots</a></li>
-                <li><a href="#">Code red</a></li>
+              <ul class="hidden-accordion-info" id="accordion-links">
+                <li><a href="#intro-to-computers">Intro to computer</a></li>
+                <li><a href="#Su-Coders">Su Coders</a></li>
+                <li><a href="#Cuddle-Bots">Cuddle Bots</a></li>
+                <li><a href="#Code-Red">Code red</a></li>
               </ul>
             </div>
           </button>
@@ -93,6 +89,7 @@
       </div>
     </nav>
     <!-- main section start -->
+
     <main>
       <div class="main-content-wrapper">
         <div class="main-drone width-auto">
@@ -101,7 +98,9 @@
               Program
               <span class="dark-font dp-block">Sudo Drones </span>
               <span class="dark-font dp-block">and Robotics</span>
-              <a class="main-drone-link main-link" href="#">Learn more</a>
+              <a class="main-drone-link main-link" href="#Sudo-Drones"
+                >Learn more</a
+              >
             </p>
           </div>
           <div class="main-drone-img-wrapper">
@@ -119,7 +118,7 @@
         </div>
         <div class="main-programs width-auto">
           <h1 class="main-programs__h1">Our Programs</h1>
-          <div class="programs-wrapper">
+          <div class="programs-wrapper" id="intro-to-computers">
             <h2 class="programs-wrapper__h2">
               Intro to <span class="dp-block">Computers</span>
             </h2>
@@ -135,7 +134,7 @@
               />
             </div>
           </div>
-          <div class="programs-wrapper su-coders">
+          <div class="programs-wrapper su-coders" id="Su-Coders">
             <h2 class="programs-wrapper__h2-su-coders">Su Coders</h2>
             <p class="programs-wrapper__p-su-coders">
               Su Coders is a program designed for everyone. Coding is for kids
@@ -143,7 +142,7 @@
             </p>
             <a class="main-link" href="#">Learn More</a>
           </div>
-          <div class="programs-wrapper robotics">
+          <div class="programs-wrapper robotics" id="Sudo-Drones">
             <h2 class="programs-wrapper__h2">
               <span class="dark-font dp-block">Sudo Drones </span>
               <span class="dark-font dp-block">and Robotics</span>
@@ -156,7 +155,7 @@
               <img src="./images/drone_parts.jpg" alt="" />
             </div>
           </div>
-          <div class="programs-wrapper code-red">
+          <div class="programs-wrapper code-red" id="Code-Red">
             <h2 class="programs-wrapper__h2">Code Red</h2>
             <p class="programs-wrapper__p">
               Code REd collects, purchases, and supplies feminine hygiene
@@ -165,7 +164,7 @@
             <a class="main-link" href="#">Learn more</a>
           </div>
           <div class="cuddle-bots-cont">
-            <div class="programs-wrapper cuddle-bots">
+            <div class="programs-wrapper cuddle-bots" id="Cuddle-Bots">
               <h2 class="programs-wrapper__h2">Cuddle Bots</h2>
               <p class="programs-wrapper__p">
                 This course introduces students to basic computer concepts in
@@ -195,7 +194,6 @@
           <span class="footer-logo__span">UZCA</span>
         </div>
         <div class="footer-zen-logo">
-          <span class="rotate-zen yellow-span">ZEN</span>
           <ul>
             <li>Urban</li>
             <li>Zen</li>

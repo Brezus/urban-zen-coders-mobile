@@ -31,7 +31,9 @@ body {
   color: var(--light-gray);
   background-color: var(--brighter-white);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* utility classes */
 .hidden {
   display: none;
