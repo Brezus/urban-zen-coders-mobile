@@ -14,6 +14,7 @@
   --blue-accent: #0067cd;
   --yellow-accent: #ffe100;
   --dark-gray: #87878b;
+  --very-dark-gray: #222322;
   --blood-red: #cf0505;
   --light-gray: #f3f3f2;
   --hot--pink: #c60a5f;
@@ -344,8 +345,9 @@ ul li a {
 /* layout */
 .main-programs {
   display: grid;
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(5, auto);
   gap: 1.5rem;
+  padding-bottom: 2rem;
 }
 .programs-wrapper {
   display: grid;
@@ -425,18 +427,35 @@ ul li a {
 }
 .zen {
   background-image: url("../images/gaming.jpg");
-  background-color: #1c1d1e70;
+  background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 4rem 3rem;
+  font-size: var(--responsive-font-s);
+  text-align: center;
 }
 .zen .main-link,
 .zen {
   color: var(--light-gray);
 }
+.zen .programs-wrapper {
+  background: none;
+}
+
+/* footer styles start */
+footer {
+  background-color: var(--very-dark-gray);
+}
 .footer-logo {
   height: 3rem;
-  background-color: #1c1d1e;
+  background-color: #0e0d0d;
+  color: var(--very-dark-gray);
+  display: grid;
+  place-items: center;
+  font-size: var(--responsive-font-m);
+}
+.footer-logo__span {
+  font-weight: var(--fw-l);
 }
