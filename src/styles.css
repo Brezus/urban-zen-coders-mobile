@@ -140,6 +140,9 @@ body {
   cursor: pointer;
   margin-left: 1rem;
 }
+.home-btn {
+  background-color: var(--dark-green-col);
+}
 
 /* hidden nav styles */
 .hidden-nav {
@@ -449,7 +452,8 @@ footer {
   background-color: var(--very-dark-gray);
 }
 .footer-logo {
-  height: 3rem;
+  /* height: 3rem; */
+  padding: 1rem 0;
   background-color: #0e0d0d;
   color: var(--very-dark-gray);
   display: grid;
@@ -458,4 +462,10 @@ footer {
 }
 .footer-logo__span {
   font-weight: var(--fw-l);
+}
+.footer-zen-logo {
+  display: flex;
+}
+.footer-zen-logo span {
+  display: inline-block;
 }

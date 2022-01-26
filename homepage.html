@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f1ee426c55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="src/index.js"></script>
+    <title>Urban Zen Coders Academy</title>
+  </head>
+  <body>
+    <!-- regular nav bar -->
+    <nav class="sticky-nav" id="nav-bar">
+      <div class="nav-items-cont">
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <span class="rotate-zen yellow-span">ZEN</span>
+        <div class="donate">
+          <i class="fas fa-heartbeat"></i>
+          <p>Donate</p>
+        </div>
+      </div>
+      <!-- hidden nav menu which triggers on click of hamburger icon -->
+      <div class="hidden-nav">
+        <div class="hidden-nav-top">
+          <span class="rotate-zen black-span">ZEN</span>
+          <a href="#" id="donate-Btn" class="btn btn-green">Donate</a>
+          <i class="fas fa-times" id="xButton"></i>
+        </div>
+        <div class="hidden-nav-accordion">
+          <button class="about accordion">
+            <h2 class="accordion-title">About UZCA</h2>
+            <i class="fas fa-angle-up"></i>
+            <div class="accordion-content">
+              <p class="hidden-accordion-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                et dolorem adipisci officia odio delectus ullam tempore? Ipsam
+                id veniam quam! Ex qui in ipsum, iure aliquid nobis blanditiis
+                eius! Inventore eveniet fugit qui est officiis quidem impedit
+                laudantium? Obcaecati deserunt fuga fugiat possimus esse at
+                magni laborum iste atque? Porro dignissimos quis ad, qui iusto
+                animi minus temporibus maiores.
+              </p>
+            </div>
+          </button>
+          <button class="contact accordion">
+            <h2 class="accordion-title">Contact UZCA</h2>
+            <i class="fas fa-angle-up"></i>
+            <div class="accordion-content">
+              <p class="hidden-accordion-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                et dolorem adipisci officia odio delectus ullam tempore? Ipsam
+              </p>
+            </div>
+          </button>
+          <button class="program accordion">
+            <h2 class="accordion-title">UZCA Program</h2>
+            <i class="fas fa-angle-up"></i>
+            <div class="accordion-content">
+              <ul class="hidden-accordion-info">
+                <li><a href="#">Intro to computer</a></li>
+                <li><a href="#">Su Coders</a></li>
+                <li><a href="#">Cuddle Bots</a></li>
+                <li><a href="#">Code red</a></li>
+              </ul>
+            </div>
+          </button>
+          <button class="join accordion">
+            <h2 class="accordion-title">Join UZCA</h2>
+          </button>
+        </div>
+        <div class="register-donate">
+          <a href="#" class="btn btn-green block donate-btn">Donate</a>
+          <a href="#" class="btn btn-dark-green block register-btn">Register</a>
+        </div>
+      </div>
+    </nav>
+    <!-- main section start -->
+    <main>
+      <div class="main-content-wrapper">
+        <div class="main-drone width-auto">
+          <div class="main-drone-text-wrapper">
+            <p class="main-drone__p">
+              Program
+              <span class="dark-font dp-block">Sudo Drones </span>
+              <span class="dark-font dp-block">and Robotics</span>
+              <a class="main-drone-link main-link" href="#">Learn more</a>
+            </p>
+          </div>
+          <div class="main-drone-img-wrapper">
+            <img src="./images/drone.png" alt="helicopter drone" />
+          </div>
+        </div>
+        <div class="main-orange-vision">
+          <div class="main-orange-vision-wrapper">
+            <p class="main-orange__p-bold">Our Vision</p>
+            <p class="main-orange__p-quote">
+              Educate, nurture, and engage urban communities through
+              <span class="green-font">S.T.E.A.M</span> is our Zen.
+            </p>
+          </div>
+        </div>
+        <div class="main-programs width-auto">
+          <h1 class="main-programs__h1">Our Programs</h1>
+          <div class="programs-wrapper">
+            <h2 class="programs-wrapper__h2">
+              Intro to <span class="dp-block">Computers</span>
+            </h2>
+            <p class="programs-wrapper__p">
+              This course introduces students to basic computer concepts in
+              hardware...
+            </p>
+            <a class="main-link" href="#">Learn More</a>
+            <div class="programs-img-wrapper">
+              <img
+                src="./images/center_facing_laptop.png"
+                alt="hp proBook laptop"
+              />
+            </div>
+          </div>
+          <div class="programs-wrapper su-coders">
+            <h2 class="programs-wrapper__h2-su-coders">Su Coders</h2>
+            <p class="programs-wrapper__p-su-coders">
+              Su Coders is a program designed for everyone. Coding is for kids
+              as young as early elementary ...
+            </p>
+            <a class="main-link" href="#">Learn More</a>
+          </div>
+          <div class="programs-wrapper robotics">
+            <h2 class="programs-wrapper__h2">
+              <span class="dark-font dp-block">Sudo Drones </span>
+              <span class="dark-font dp-block">and Robotics</span>
+            </h2>
+            <p class="programs-wrapper__p">
+              Learn robotics with programmable humanoid robots and drones
+            </p>
+            <a class="main-link" href="#">Learn more</a>
+            <div class="programs-img-wrapper">
+              <img src="./images/drone_parts.jpg" alt="" />
+            </div>
+          </div>
+          <div class="programs-wrapper code-red">
+            <h2 class="programs-wrapper__h2">Code Red</h2>
+            <p class="programs-wrapper__p">
+              Code REd collects, purchases, and supplies feminine hygiene
+              products bras and underwear to women ...
+            </p>
+            <a class="main-link" href="#">Learn more</a>
+          </div>
+          <div class="cuddle-bots-cont">
+            <div class="programs-wrapper cuddle-bots">
+              <h2 class="programs-wrapper__h2">Cuddle Bots</h2>
+              <p class="programs-wrapper__p">
+                This course introduces students to basic computer concepts in
+                hardware ...
+              </p>
+              <a class="main-link" href="#">Learn more</a>
+            </div>
+            <div class="cuddle-bots-img-wrapper"></div>
+          </div>
+        </div>
+        <div class="zen">
+          <div class="programs-wrapper">
+            <h2 class="programs-wrapper__h2">
+              Lets Create a World of Zen Together!
+            </h2>
+            <p class="programs-wrapper__p">
+              Join our movement to empower and educate.
+            </p>
+            <a class="main-link" href="#">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <span class="footer-logo__span">UZCA</span>
+        </div>
+        <div class="footer-zen-logo">
+          <span class="rotate-zen yellow-span">ZEN</span>
+          <ul>
+            <li>Urban</li>
+            <li>Zen</li>
+            <li>Coders</li>
+            <li>Academy.inc</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
