@@ -225,6 +225,7 @@ ul {
 ul li a {
   text-decoration: none;
   color: var(--black);
+  display: block;
 }
 .hidden-accordion-info {
   transition: all 0.2s ease-in-out;
