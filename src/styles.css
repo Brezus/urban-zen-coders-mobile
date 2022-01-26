@@ -367,7 +367,7 @@ ul li a {
 .su-coders {
   color: var(--light-gray);
   background-color: black;
-  background-image: url("/images/student_coding.jpg");
+  background-image: url("../images/student_coding.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -392,7 +392,7 @@ ul li a {
 
 .code-red {
   background-color: var(--hot--pink);
-  background-image: url("/images/women.png");
+  background-image: url("../images/women.png");
   background-size: 70%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -412,7 +412,7 @@ ul li a {
 }
 .cuddle-bots-img-wrapper {
   background-color: black;
-  background-image: url("/images/kid-learning.jpeg");
+  background-image: url("../images/kid-learning.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -424,7 +424,7 @@ ul li a {
   background-color: var(--darker-white);
 }
 .zen {
-  background-image: url("/images/gaming.jpg");
+  background-image: url("../images/gaming.jpg");
   background-color: #1c1d1e70;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
