@@ -25,6 +25,14 @@
   --responsive-font-s: clamp(0.7rem, 3vw, 1rem);
   --responsive-font-m: clamp(1rem, 4vw, 2rem);
 }
+/* landing page styles begin  */
+.landing-page-cont {
+  padding: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* landing page style ends */
 body {
   font-size: var(--fs);
   font-family: var(--ff);
