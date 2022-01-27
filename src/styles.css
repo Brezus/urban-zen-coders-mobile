@@ -160,6 +160,10 @@ html {
 .black-span {
   color: var(--black);
 }
+.svg-link {
+  position: relative;
+  top: 3px;
+}
 .donate {
   cursor: pointer;
   display: flex;
@@ -551,7 +555,9 @@ footer {
   font-weight: var(--fw-l);
 }
 .footer-zen-logo {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  gap: 0.8rem;
 }
 .footer-zen-logo span {
   display: inline-block;
