@@ -7,7 +7,7 @@ const accordionCont = document.querySelector(".hidden-nav-accordion");
 const hiddenNavList = document.getElementById("accordion-links");
 
 hiddenNavList.addEventListener("click", (e) => {
-  let clickedLink = e.target;
+  let clickedLink = e.target.closest("li");
   clickedLink.addEventListener("click", closeNav());
 });
 

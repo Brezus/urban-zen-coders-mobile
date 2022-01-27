@@ -541,6 +541,7 @@ ul li a {
 /* footer styles start */
 footer {
   background-color: var(--very-dark-gray);
+  padding-bottom: 3rem;
 }
 .footer-logo {
   /* height: 3rem; */
@@ -551,14 +552,18 @@ footer {
   place-items: center;
   font-size: var(--responsive-font-m);
 }
-.footer-logo__span {
+.footer-logo__link {
   font-weight: var(--fw-l);
+  color: var(--very-dark-gray);
+  text-decoration: none;
 }
-.footer-zen-logo {
+.footer-nav-accordion-wrapper,
+.footer-nav-div {
   display: grid;
-  grid-template-columns: repeat(2 1fr);
-  gap: 0.8rem;
+  grid-auto-rows: auto;
+  gap: 1.5rem;
 }
-.footer-zen-logo span {
-  display: inline-block;
+.footer-zen {
+  display: grid;
+  grid-template-columns: 1rem auto;
 }
