@@ -62,16 +62,22 @@ html {
 }
 /* landing page styles begin  */
 .landing-page-wrapper {
-  padding: 3rem 0;
+  padding: 3rem;
   color: var(--dark-gray);
-  width: 60%;
+  max-width: 800px;
   margin: 0 auto;
 }
-.landing-page-logo-contact-wrapper {
+.landing-page-contact-wrapper {
   display: grid;
-  grid-template-rows: repeat(8, auto);
+  grid-template-rows: repeat(2, auto);
   place-items: center;
   text-align: center;
+  gap: 1.5rem;
+  /* 2 divs landing svg landing contact*/
+}
+.landing-page-contact-info-wrapper {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
   gap: 1.5rem;
 }
 .landing-page-logo-contact-wrapper h2 {
@@ -84,6 +90,39 @@ html {
 }
 .landing-page__social-icons-cont a {
   color: var(--dark-gray);
+}
+
+.landing-page-h1 {
+  display: none;
+}
+@media screen and (min-width: 45rem) {
+  .landing-page-wrapper {
+    display: grid;
+    place-items: center;
+  }
+  .landing-page-contact-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    grid-template-rows: 1fr;
+  }
+  .landing-page-contact-info-wrapper {
+    gap: 1rem;
+  }
+  .landing-page-svg-cont {
+    grid-column: 2;
+    grid-row: 1 / 2;
+    justify-self: end;
+    text-align: center;
+  }
+
+  svg {
+    display: inline-block;
+    transform: rotate(450deg);
+    transition: transform 0.4s ease;
+  }
+  .landing-page-h1 {
+    display: block;
+  }
 }
 
 /* landing page style ends */
