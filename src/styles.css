@@ -25,14 +25,7 @@
   --responsive-font-s: clamp(0.7rem, 3vw, 1rem);
   --responsive-font-m: clamp(1rem, 4vw, 2rem);
 }
-/* landing page styles begin  */
-.landing-page-cont {
-  padding: 3rem;
-  display: grid;
-  place-items: center;
-}
 
-/* landing page style ends */
 body {
   font-size: var(--fs);
   font-family: var(--ff);
@@ -56,6 +49,44 @@ html {
   width: 90%;
   margin: 0 auto;
 }
+.dp-grid {
+  display: grid;
+}
+.center-grid-items {
+  place-items: center;
+}
+.background-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* landing page styles begin  */
+.landing-page-wrapper {
+  padding: 3rem 0;
+  color: var(--dark-gray);
+  width: 60%;
+  margin: 0 auto;
+}
+.landing-page-logo-contact-wrapper {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  place-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.landing-page-logo-contact-wrapper h2 {
+  color: var(--f-col);
+}
+.landing-page__social-icons-cont {
+  font-size: 1.1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+}
+.landing-page__social-icons-cont a {
+  color: var(--dark-gray);
+}
+
+/* landing page style ends */
 
 /* navigation css */
 #menu-icon {
@@ -105,6 +136,12 @@ html {
 }
 
 /* button styles */
+#landing-page-btn {
+  width: 100%;
+  background-color: var(--dark-green-col);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 #donate-Btn {
   margin-left: auto;
 }
