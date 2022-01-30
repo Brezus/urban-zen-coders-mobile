@@ -117,7 +117,7 @@ html {
 
   svg {
     display: inline-block;
-    transform: rotate(450deg);
+    transform: rotate(720deg);
     transition: transform 0.4s ease;
   }
   .landing-page-h1 {
