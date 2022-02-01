@@ -23,6 +23,7 @@
   --fw-m: 700;
   --fw-l: 800;
   --responsive-font-s: clamp(0.7rem, 3vw, 1rem);
+  --responsive-font-vs: clamp(0.7rem, 2vw, 0.9rem);
   --responsive-font-m: clamp(1rem, 4vw, 2rem);
 }
 
@@ -130,8 +131,26 @@ html {
 /* navigation css */
 #menu-icon {
   cursor: pointer;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  padding: 0.2rem;
+  /* font-size: 1.5rem; */
+  height: 100%;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#menu-icon .line {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+#menu-icon .line:nth-child(2) {
+  height: 3px;
+  width: 65%;
+}
+#menu-icon .line:last-child {
+  height: 3px;
+  width: 35%;
 }
 
 .sticky-nav {
@@ -184,6 +203,7 @@ html {
   background-color: var(--dark-green-col);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  text-align: center;
 }
 #donate-Btn {
   margin-left: auto;
@@ -381,7 +401,7 @@ ul li a {
 .main-drone {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  padding: 0.5rem 0rem 2rem;
+  padding: 3rem 0rem 2rem;
 }
 /* our vision  */
 /* layout */
@@ -545,12 +565,15 @@ footer {
 }
 .footer-logo {
   /* height: 3rem; */
-  padding: 1rem 0;
   background-color: #0e0d0d;
   color: var(--very-dark-gray);
   display: grid;
   place-items: center;
   font-size: var(--responsive-font-m);
+}
+.footer-nav-accordion-wrapper,
+.footer-logo {
+  padding: 1rem 0;
 }
 .footer-logo__link {
   font-weight: var(--fw-l);
@@ -563,7 +586,36 @@ footer {
   grid-auto-rows: auto;
   gap: 1.5rem;
 }
-.footer-zen {
-  display: grid;
-  grid-template-columns: 1rem auto;
+.footer-zen p {
+  opacity: 0.6;
+  font-weight: var(--fw-s);
+  font-size: 0.8rem;
+}
+
+.footer-zen-list {
+  font-size: 0.4rem;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 22px;
+}
+.footer-zen-logo-cont {
+  position: relative;
+}
+/* icons next to text in footer  */
+.footer-nav-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+.footer-nav-contact i {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+.footer-nav-contact p {
+  opacity: 0.6;
+  margin-left: 2rem;
+  font-size: var(--responsive-font-vs);
 }
