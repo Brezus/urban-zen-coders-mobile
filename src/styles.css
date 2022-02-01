@@ -358,6 +358,12 @@ ul li a {
 .accordion.active .fa-angle-up {
   transform: rotate(180deg);
 }
+
+.accordion.footer-acc {
+  border-bottom: none;
+  color: white;
+  padding: 0;
+}
 /* main content  */
 
 .main-content-wrapper {
@@ -584,7 +590,15 @@ footer {
 .footer-nav-div {
   display: grid;
   grid-auto-rows: auto;
-  gap: 1.5rem;
+  gap: 2rem;
+}
+.footer-nav-div {
+  gap: 1rem;
+}
+.footer-zen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 .footer-zen p {
   opacity: 0.6;
@@ -610,7 +624,7 @@ footer {
   position: relative;
 }
 .footer-nav-contact i {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: absolute;
   left: 0;
 }

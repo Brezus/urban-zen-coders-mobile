@@ -5,6 +5,7 @@ const regDonBtns = document.querySelectorAll(".btn");
 const accordionBtns = document.querySelectorAll(".accordion");
 const accordionCont = document.querySelector(".hidden-nav-accordion");
 const hiddenNavList = document.getElementById("accordion-links");
+const footerAccordionCont = document.querySelector(".footer-accordion-cont");
 
 hiddenNavList.addEventListener("click", (e) => {
   let clickedLink = e.target.closest("li");
@@ -16,6 +17,14 @@ accordionCont.addEventListener("click", (e) => {
   if (!target) return;
   if (!accordionCont.contains(target)) return;
   target.classList.toggle("active");
+});
+
+footerAccordionCont.addEventListener("click", (e) => {
+  let target = e.target.closest(".accordion.footer-acc");
+  if (!target) return;
+  if (!footerAccordionCont.contains(target)) return;
+  target.classList.toggle("active");
+  console.log(target);
 });
 
 for (btn of regDonBtns) {
